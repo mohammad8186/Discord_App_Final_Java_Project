@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="688.0" style="-fx-background-color: #45494d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mhsh.mavenproject1.PendingContoller">
+   <children>
+      <Label layoutX="37.0" layoutY="78.0" prefHeight="55.0" prefWidth="72.0" text="Pending -" textFill="#cdc5c5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="35.0" layoutY="25.0" prefHeight="39.0" prefWidth="625.0" promptText="Search" style="-fx-background-color: #222425;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="countPendingNumberLabel" layoutX="107.0" layoutY="78.0" prefHeight="55.0" prefWidth="26.0" textFill="#cdc5c5">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="525.0" layoutX="133.0" layoutY="150.0" startX="-100.0" stroke="#806f6f" />
+      <VBox fx:id="elementsVbox" layoutX="34.0" layoutY="159.0" prefHeight="343.0" prefWidth="626.0">
+         <children>
+            <HBox prefHeight="66.0" prefWidth="626.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label prefHeight="33.0" prefWidth="113.0" text="Elahe" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #222425;" text="Accept" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="335.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #222425;" text="Reject" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

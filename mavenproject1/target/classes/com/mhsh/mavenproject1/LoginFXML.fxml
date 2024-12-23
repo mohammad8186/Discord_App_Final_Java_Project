@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="630.0" styleClass="bodybg" stylesheets="@StyleBackgroundImageRegisterController.css" xmlns="http://javafx.com/javafx/13" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mhsh.mavenproject1.LoginController">
+   <children>
+      <Pane layoutX="135.0" layoutY="58.0" prefHeight="299.0" prefWidth="346.0" style="-fx-background-color: #46474A;">
+         <children>
+            <Label layoutX="87.0" layoutY="14.0" prefHeight="32.0" prefWidth="187.0" text="Welcome back!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="91.0" prefHeight="20.0" prefWidth="320.0" text="Email or Phonenumber - This field is requierd" textFill="#d08a8a">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="146.0" text="Password - This field is requierd" textFill="#d38c8c">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emaiPhonTextField" layoutX="40.0" layoutY="114.0" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: #636566;" />
+            <PasswordField fx:id="passwordTextField" layoutX="40.0" layoutY="166.0" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: #636566;" />
+            <Button fx:id="loginButton" layoutX="25.0" layoutY="215.0" mnemonicParsing="false" onAction="#loginEntered" prefHeight="32.0" prefWidth="296.0" style="-fx-background-color: #614fc3;" text="Login" textFill="WHITE" />
+            <Hyperlink fx:id="toRegisterWindow" layoutX="109.0" layoutY="252.0" onAction="#toRegisterWindowEntered" text="Register" textFill="#9199ff" underline="true" />
+            <Label layoutX="25.0" layoutY="247.0" prefHeight="32.0" prefWidth="92.0" text="Need an account?" textFill="#979191">
+               <font>
+                  <Font name="Arial Narrow Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="38.0" prefHeight="32.0" prefWidth="187.0" text="We are so excited to see you again!" textFill="#ae9d9d">
+               <font>
+                  <Font name="Arial Narrow Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

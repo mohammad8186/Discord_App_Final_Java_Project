@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mhsh.mavenproject1.ProfileController">
+   <children>
+      <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="777.0" prefWidth="310.0" style="-fx-background-color: #36393c;">
+         <children>
+            <Label minWidth="1.0" prefHeight="45.0" prefWidth="151.0" text="USER SETTING" textAlignment="RIGHT" textFill="WHITE" translateX="120.0">
+               <padding>
+                  <Insets left="30.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="myAccount" minWidth="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #36393c;" text="My Account" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+              
+               <effect>
+                  <ColorAdjust brightness="0.15" contrast="-0.19" />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="308.0" layoutY="-1.0" prefHeight="777.0" prefWidth="831.0" style="-fx-background-color: #5a636b;">
+         <children>
+            <Label layoutX="40.0" layoutY="27.0" text="My Account" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Pane layoutX="40.0" layoutY="72.0" prefHeight="393.0" prefWidth="670.0" style="-fx-background-color: #25282c;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Pane fx:id="subPane" layoutX="9.0" layoutY="102.0" prefHeight="280.0" prefWidth="652.0" style="-fx-background-color: #36393c;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <Label layoutX="25.0" layoutY="60.0" text="USERNAME" textFill="#867f7f">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="123.0" text="EMAIL" textFill="#867f7f">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="189.0" text="MOBILE" textFill="#867f7f">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="editUsername" layoutX="577.0" layoutY="62.0" mnemonicParsing="false" onAction="#editUsernameClicked" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #837f7f;" text="EDIT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editEmail" layoutX="577.0" layoutY="122.0" mnemonicParsing="false" onAction="#editEmailClicked" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #837f7f;" text="EDIT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editMobile" layoutX="577.0" layoutY="184.0" mnemonicParsing="false" onAction="#editMobileClicked" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #837f7f;" text="EDIT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="username" layoutX="26.0" layoutY="80.0" prefHeight="25.0" prefWidth="183.0" textFill="#a19d9d">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="email" layoutX="25.0" layoutY="142.0" prefHeight="25.0" prefWidth="137.0" textFill="#867f7f">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mobile" layoutX="25.0" layoutY="209.0" prefHeight="17.0" prefWidth="190.0" textFill="#867f7f">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="9.0" layoutY="18.0" prefHeight="71.0" prefWidth="652.0" style="-fx-background-color: #3b3d40;">
+                     <children>
+                        <Label fx:id="usernameNexttoImage" layoutX="162.0" layoutY="38.0" prefHeight="30.0" prefWidth="190.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Circle fx:id="circleImage" fill="WHITE" layoutX="104.0" layoutY="89.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Button fx:id="changeImage" layoutX="526.0" layoutY="81.0" mnemonicParsing="false" onAction="#changeImageClicked" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #5c5aff;" text="Change Image" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label layoutX="40.0" layoutY="488.0" text="Password and Authentication" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="changePassword" layoutX="40.0" layoutY="534.0" minWidth="85.0" mnemonicParsing="false" onAction="#changePasswordClicked" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: #5c5aff;" text="Change Password" textFill="WHITE">
+              
+               <effect>
+                  <ColorAdjust brightness="0.15" contrast="-0.19" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="40.0" layoutY="610.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOut" layoutX="40.0" layoutY="656.0" minWidth="80.0" mnemonicParsing="false" onAction="#logOutClicked" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #ab2a2a;" text="Log Out" textFill="WHITE">
+             
+               <effect>
+                  <ColorAdjust brightness="0.15" contrast="-0.19" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

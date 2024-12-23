@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="808.0" style="-fx-background-color:  #45494d;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mhsh.mavenproject1.addFriendController">
+   <children>
+      <Label layoutX="43.0" layoutY="25.0" prefHeight="55.0" prefWidth="132.0" text="ADD FRIEND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="57.0" prefHeight="55.0" prefWidth="519.0" text="You can add a friend with their Discord Tag(Optional).it's cAsE sEnSitIvE!" textFill="#cdc5c5">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="43.0" layoutY="126.0" prefHeight="44.0" prefWidth="593.0" promptText="Enter a username" style="-fx-background-color: #222425;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendRequestButton" layoutX="428.0" layoutY="132.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" style="-fx-background-color: #614fc3;" text="Send Friend Request" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="successfullySendLabel" layoutX="45.0" layoutY="177.0" textFill="#32d760">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
